@@ -1,0 +1,6 @@
+<h2>Notas</h2>
+<ul>
+  <li *ngFor="let nota of notas">
+    {{ nota.asignatura }}: {{ nota.valor }} <button (click)="eliminarNota(nota.id)">Eliminar</button>
+  </li>
+</ul>
